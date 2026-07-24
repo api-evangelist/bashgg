@@ -1,22 +1,73 @@
 aid: bashgg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bashgg.png
 name: bash.gg
-description: bash.gg is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: bash.gg was a browser-based indie game marketplace built on Solana (founded by Kyle Zappitell,
+  a former Xbox engineer) that let independent developers sell games directly in the browser without the
+  ~30% platform commissions charged by Steam, Xbox, Apple, and PlayStation, with 10% royalties routed back
+  to developers on resale. It entered the API Evangelist network as a venture-portfolio lead and was kept
+  as a stub. Re-probed on 2026-07-20, the company remains defunct - the bash.gg domain is parked for sale
+  on the GoDaddy/Afternic aftermarket (NS delegated to afternic.com, null MX, SPF "-all"), there is no live
+  developer portal, API, or documentation, and the company GitHub organization (github.com/bash-gg) exists
+  but publishes zero repositories. Wayback captures show the site only ever exposed Next.js/NextAuth internal
+  routes (/api/auth/session), never a public developer API. No provider artifacts could be searched,
+  generated, or derived. No fabrication was performed.
+x-status: defunct
+x-status-checked: '2026-07-20'
+x-status-evidence: 'domain parked on GoDaddy/Afternic aftermarket (NS ns1/ns2.afternic.com, null MX, SPF -all);
+  apex serves a JS redirect stub to /lander; no live developer/API surface; GitHub org bash-gg has 0 public repos'
+x-probe-notes:
+  # IMPORTANT for future enrichment runs: the parked domain answers HTTP 200 to EVERY path.
+  # /.well-known/security.txt, /.well-known/openid-configuration, /.well-known/api-catalog and
+  # /llms.txt all returned 200 on 2026-07-20 but are wildcard parking responses, NOT provider
+  # artifacts. Do not record them as WellKnown/SecurityTxt/LLMsTxt pointers.
+  wildcard_200: true
+  wildcard_body: '<!DOCTYPE html><html><head><script>window.onload=function(){window.location.href="/lander"}</script></head></html>'
+  wildcard_verified_with: 'https://bash.gg/this-path-does-not-exist-kinlane-test-9876 -> 200, identical body'
+  llms_txt_caveat: '/llms.txt returns real content, but it is GoDaddy aftermarket domain-sale copy, not a bash.gg artifact'
+  never_had_public_api: 'web.archive.org CDX shows only Next.js/NextAuth routes (/api/auth/session, /api/auth/signin); no openapi/swagger/graphql/docs paths ever captured'
 url: https://raw.githubusercontent.com/api-evangelist/bashgg/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
+x-backed-by-note: 'UNVERIFIED - lead entered the network via an a16z portfolio harvest, but public press
+  coverage of the 2022 raise (~$4M) names General Catalyst, Entree Capital and Luno Expeditions rather than
+  a16z. Primary-source verification was blocked during the 2026-07-20 pass; re-verify before relying on this field.'
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Gaming
+- Marketplace
+- Indie Games
+- Web3
+- Solana
+- Defunct
 apis: []
+common:
+- type: GitHubOrganization
+  url: https://github.com/bash-gg
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
