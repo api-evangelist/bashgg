@@ -46,7 +46,7 @@ x-backed-by-note: 'UNVERIFIED - lead entered the network via an a16z portfolio h
   a16z. Primary-source verification was blocked during the 2026-07-20 pass; re-verify before relying on this field.'
 x-tier: stub
 x-tier-reason: portfolio-lead
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
