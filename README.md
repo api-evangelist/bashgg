@@ -64,6 +64,34 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-bash.gg is a company surfaced as a portfolio company of a16z and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: a16z
+bash.gg was a browser-based indie game marketplace built on Solana (founded by Kyle Zappitell, a former Xbox engineer) that let independent developers sell games directly in the browser without the ~30% platform commissions charged by Steam, Xbox, Apple, and PlayStation, with 10% royalties routed back to developers on resale. It entered the API Evangelist network as a venture-portfolio lead and was kept as a stub. Re-probed on 2026-07-20, the company remains defunct - the bash.gg domain is parked for sale on the GoDaddy/Afternic aftermarket (NS delegated to afternic.com, null MX, SPF "-all"), there is no live developer portal, API, or documentation, and the company GitHub organization (github.com/bash-gg) exists but publishes zero repositories. Wayback captures show the site only ever exposed Next.js/NextAuth internal routes (/api/auth/session), never a public developer API. No provider artifacts could be searched, generated, or derived. No fabrication was performed.
+
+**Areas:** Company · Gaming · Marketplace · Indie Games · Web3 · Solana · Defunct
+
+## bash.gg on APIs.io (historical record)
+
+Everything profiled for bash.gg is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bashgg/](https://apis.io/providers/bashgg/)** — or go straight to one of the APIs or properties below.
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [GitHub](https://github.com/bash-gg)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for bash.gg: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bashgg/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
